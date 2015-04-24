@@ -35,3 +35,15 @@ md-list .md-button {
   text-align: left;
   width: 100%;
 }
+
+@media (min-width: 890px) {
+  .youtube_video {
+    width: 560px;
+  }
+}
+
+@media (max-width: 890px) {
+  .youtube_video {
+    width: 100%;
+  }
+}

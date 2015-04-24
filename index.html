@@ -49,7 +49,7 @@
 
           <section ng-repeat="link in technics.selected.links">
             
-            <iframe ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <iframe class="youtube_video" ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
 
 
