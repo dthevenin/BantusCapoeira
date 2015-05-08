@@ -19,25 +19,20 @@
     <div layout="row" flex>
       <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
       <md-tabs md-dynamic-height md-border-bottom>
-        <md-tab label="Ataque">
-
-      
-        <md-list>
-        <div ng-repeat="sub_technics in technics">
-          <md-subheader class="md-no-sticky">{{sub_technics.sub_type}}</md-subheader>
-            <md-list-item ng-repeat="item in sub_technics.list">
-              <md-button ng-click="technics.selectMove(item)" ng-class="{'selected' : item === technics.selected }">
-                <h4>{{item.name}}</h4>
-              </md-button>
-            </md-list-item>
-          </div>
-        </md-list>
+        <div ng-init="moveTypes = ['Footwork', 'Ataque', 'Defesa', 'Floreios']"></div>
+        <md-tab ng-repeat="type in moveTypes" label="{{type}}">
+          <md-list>
+            <div ng-repeat="sub_technics in technics | filter:{type:type}">
+              <md-subheader class="md-no-sticky">{{sub_technics.sub_type}}</md-subheader>
+              <md-list-item ng-repeat="item in sub_technics.list">
+                <md-button ng-click="technics.selectMove(item)" ng-class="{'selected' : item === technics.selected }">
+                  <h4>{{item.name}}</h4>
+                </md-button>
+              </md-list-item>
+            </div>
+          </md-list>
         </md-tab>
-        <md-tab label="Ataque">
-        </md-tab>
-        <md-tab label="Ataque">
-        </md-tab>
-        </md-tabs>
+      </md-tabs>
       </md-sidenav>
 
       <div layout="column" flex id="content">
@@ -50,7 +45,6 @@
           <section ng-repeat="link in technics.selected.links">
             
             <iframe class="youtube_video" ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-
 
 
           </section>
