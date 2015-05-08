@@ -1,7 +1,7 @@
 window.technics = [
   {
-    "type" : "ataque",
-    "sub_type" : "rodundo",
+    "type" : "Ataque",
+    "sub_type" : "Rodundo",
     "list" : [
       {
         "name": "Meia-lua de frente",
@@ -96,8 +96,8 @@ window.technics = [
     ]
   },
   {
-    "type" : "ataque",
-    "sub_type" : "em linha",
+    "type" : "Ataque",
+    "sub_type" : "Em linha",
     "list" : [
       {
         "name": "escorão",
@@ -153,8 +153,8 @@ window.technics = [
     ]
   },
   {
-    "type" : "ataque",
-    "sub_type" : "de mão",
+    "type" : "Ataque",
+    "sub_type" : "De mão",
     "list" : [
       {
         "name": "galopante",
@@ -183,11 +183,279 @@ window.technics = [
     ]
   },
   {
-    "type" : "ataque",
-    "sub_type" : "cabesa",
+    "type" : "Ataque",
+    "sub_type" : "Cabesa",
     "list" : [
       {
-        "name": "cabeçada",
+        "name": "Cabeçada",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
+    "type" : "Defesa",
+    "list" : [
+      {
+        "name": "Negativa de frente",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Negativa lateral",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Negativa atrás negativa dentro",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Negativa regional",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Negativa de angola cocorinha",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Eu ir",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Meia volta",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Queda de quatro",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
+    "type" : "Footwork",
+    "list" : [
+      {
+        "name": "Ginga",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Rolê",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Fuga",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Tempo lateral tempo de frante",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Troca finta-armada",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Finta-queixada",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
+    "type" : "Floreios",
+    "sub_type" : "Bananeira",
+    "list" : [
+      {
+        "name": "Bananeira",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Bananeira com cabeça no chão",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Bananeira prancha",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Bananeira canivete",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
+    "type" : "Floreios",
+    "sub_type" : "Aú",
+    "list" : [
+      {
+        "name": "Aú sem mão",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú helicoptero",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú fechado",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú virado",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú auzinho",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú bandeira",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú Batido",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú chibata",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Aú Reversão",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
+    "type" : "Floreios",
+    "sub_type" : "",
+    "list" : [
+      {
+        "name": "rasteira",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "vingativa",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "tesoura",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "pião de mão",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "pião de cabeça",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "mortal lateral",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "mortal parafuso",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "mortal parafuseta",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "queda di rim",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "ponte",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "passada de ombro",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "passada de rule",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "estrela",
         "description": "",
         "level": 2,
         "links" : []
