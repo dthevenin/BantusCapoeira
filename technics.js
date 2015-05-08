@@ -8,6 +8,12 @@ window.technics = [
         "description": "Meia Lua de Frente (Front Half Moon) is an outside-inside crescent kick seen in other martial arts. This kick involves using the hips to generate enough force to bring the foot of the kicking leg across the face of the player. While it can be used as an attack itself, it mainly is used as a poke or trap for another attack. Other uses for it can be as a combination with cartwheels and other acrobatic moves therefore working as an escape.",
         "level": 0,
         "links" : [{
+          "type": "local_video",
+          "href": "assets/movies/01_meia-lua de frente.m4v"
+        },{
+          "type": "local_video",
+          "href": "assets/movies/01_meia-lua de frente2.m4v"
+        },{
           "type": "youtube",
           "href": "UzG2bNa4CrE"
         }]
