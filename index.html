@@ -35,12 +35,14 @@
       </md-tabs>
       </md-sidenav>
 
-      <div layout="column" flex id="content">
-        <md-content layout="column" flex class="md-padding">
+      <div layout="column" id="content">
+        <md-content class="md-padding move_description">
 
           <h2>{{technics.selected.name}}</h2>
           <h4>{{technics.selected.type}}/{{technics.selected.sub_type}}</h4>
           <p>{{technics.selected.description}}</p>
+          
+          <div class="medias" layout="column" layout-align="start center">
 
           <section ng-repeat="link in technics.selected.links">
 
@@ -48,8 +50,8 @@
             
             <iframe class="youtube_video" ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="480" height="272" frameborder="0" allowfullscreen></iframe>
 
-
           </section>
+          </div>
 
         </md-content>
       </div>

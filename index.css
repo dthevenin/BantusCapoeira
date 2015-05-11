@@ -36,6 +36,13 @@ md-list .md-button {
   width: 100%;
 }
 
+.move_description video,
+.move_description iframe {
+  width: 480px;
+  height: 272px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 890px) {
   .youtube_video {
     width: 560px;
