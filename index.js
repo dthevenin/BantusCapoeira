@@ -27,5 +27,11 @@ app.controller('AppCtrl', function($scope, $mdSidenav, $sce){
   $scope.generateYoutubeLink = function (code) {
     return $sce.trustAsResourceUrl ("https://www.youtube.com/embed/" + code);
   }
+  
+  $scope.selectedLevels = [0, 1]; 
+
+  $scope.contains = function (expected, actual) {  
+    return actual.indexOf(expected) > -1;
+  };
 
 });

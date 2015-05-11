@@ -24,7 +24,7 @@
           <md-list>
             <div ng-repeat="sub_technics in technics | filter:{type:type}">
               <md-subheader class="md-no-sticky">{{sub_technics.sub_type}}</md-subheader>
-              <md-list-item ng-repeat="item in sub_technics.list">
+              <md-list-item ng-repeat="item in sub_technics.list | filter:{level:selectedLevels}:contains">
                 <md-button ng-click="technics.selectMove(item)" ng-class="{'selected' : item === technics.selected }">
                   <h4>{{item.name}}</h4>
                 </md-button>
