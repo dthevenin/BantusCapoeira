@@ -258,14 +258,14 @@ window.technics = [
     "list" : [
       {
         "name": "Ginga",
-        "description": "",
-        "level": 2,
+        "description": "The ginga (pronounced jeen-gah) is the fundamental footwork of capoeira. Its constant triangular footwork makes capoeira easily recognizable as well as confusing since it looks much more like a rhythmic dance step than an orthodox static fighting stance.",
+        "level": 0,
         "links" : []
       },
       {
         "name": "Rolê",
-        "description": "",
-        "level": 2,
+        "description": "Rolê: This 'rolling' motion is - together with the Ginga and the Au - the basic method of moving around in the Roda. This move can be performed from Ginga or from most of the esquivas. It is essentially a spin to one side by the capoeirista while remaining low to the ground and always watching the other player.",
+        "level": 0,
         "links" : []
       },
       {
@@ -300,9 +300,12 @@ window.technics = [
     "list" : [
       {
         "name": "Bananeira",
-        "description": "",
-        "level": 2,
-        "links" : []
+        "description": "The bananeira is a handstand in capoeira that derives its name from the banana trees of Brazil. The hands are spread at least shoulder-width apart and the legs are usually together over the capoerista's head.",
+        "level": 1,
+        "links" : [{
+          "type": "local_video",
+          "href": "assets/movies/59_bananeira.m4v"
+        }]
       },
       {
         "name": "Bananeira com cabeça no chão",
