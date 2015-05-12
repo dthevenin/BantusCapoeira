@@ -1,5 +1,9 @@
 var app = angular.module ('CapoeiraTechnics', ['ngMaterial']);
 
+app.config (function ($mdIconProvider) {
+  $mdIconProvider.icon ("menu", "./assets/menu.svg", 24);
+});
+
 app.controller('AppCtrl', function($scope, $mdSidenav, $sce){
 
   function patchData () {

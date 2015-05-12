@@ -22,9 +22,8 @@ p, input {
 .menuBtn {
   background-color: transparent;
   border: none;
-  height: 38px;
-  margin: 16px 0 0 16px;
-  width: 36px;
+  width: 54px;
+  color: white;
 } 
 md-toolbar h1 {
   font-weight: normal;
