@@ -32,8 +32,11 @@ window.technics = [
         "description": "An armada is a reverse roundhouse kick, also described as a spinning inside to outside crescent kick. It can be either a Rabo-de-Arraia without the hands supporting on the floor (the head falls below the waist and the kick is executed with the heel), or a Meia lua de Costas (halfmoon from the back), a spinning kick with the body upright. The striking surface is usually the outside blade of the kicking foot. A queixada and armada are executed in exactly the same way with the exception of the armada beginning with a step to the right or left before releasing the kick. The power of the armada actually comes from the torque placed on the hips from the spin.",
         "level": 0,
         "links" : [{
-          "type": "youtube",
-          "href": "1iJ_pBo-Isc"
+          "type": "local_video",
+          "href": "assets/movies/03_Armada.m4v"
+        },{
+          "type": "local_video",
+          "href": "assets/movies/03_Armada2.m4v"
         }]
       },
       {
@@ -447,9 +450,12 @@ window.technics = [
       },
       {
         "name": "ponte",
-        "description": "",
-        "level": 2,
-        "links" : []
+        "description": "The ponte is a bridge with the stomach facing upward and the hands and feet pushing to keep the back arched and off the floor. Most learn to roll into a ponte by turning their legs and hips around first and then inverting into a bridge.",
+        "level": 0,
+        "links" : [{
+          "type": "local_video",
+          "href": "assets/movies/66_Ponte.m4v"
+        }]
       },
       {
         "name": "passada de ombro",

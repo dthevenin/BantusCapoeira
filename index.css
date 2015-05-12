@@ -24,10 +24,12 @@ p, input {
   border: none;
   width: 54px;
   color: white;
-} 
+}
+
 md-toolbar h1 {
   font-weight: normal;
 }
+
 md-list .md-button {
   color: inherit;
   font-weight: 500;
