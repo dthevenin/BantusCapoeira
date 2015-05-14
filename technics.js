@@ -265,22 +265,22 @@ window.technics = [
         "level": 0,
         "links" : [{
           "type": "local_svg",
-          "href": "assets/svg/ginga1.svg#layer1",
+          "href": "assets/svgs/ginga1.svg#layer1",
           "width": 120,
           "height": 360
         },{
           "type": "local_svg",
-          "href": "assets/svg/ginga2.svg#layer1",
+          "href": "assets/svgs/ginga2.svg#layer1",
           "width": 285,
           "height": 360
         },{
           "type": "local_svg",
-          "href": "assets/svg/ginga3.svg#layer1",
+          "href": "assets/svgs/ginga3.svg#layer1",
           "width": 295,
           "height": 360
         },{
           "type": "local_svg",
-          "href": "assets/svg/ginga4.svg#layer1",
+          "href": "assets/svgs/ginga4.svg#layer1",
           "width": 150,
           "height": 360
         }]
