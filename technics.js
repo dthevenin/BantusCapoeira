@@ -263,7 +263,27 @@ window.technics = [
         "name": "Ginga",
         "description": "The ginga (pronounced jeen-gah) is the fundamental footwork of capoeira. Its constant triangular footwork makes capoeira easily recognizable as well as confusing since it looks much more like a rhythmic dance step than an orthodox static fighting stance.",
         "level": 0,
-        "links" : []
+        "links" : [{
+          "type": "local_svg",
+          "href": "assets/svg/ginga1.svg#layer1",
+          "width": 120,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svg/ginga2.svg#layer1",
+          "width": 285,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svg/ginga3.svg#layer1",
+          "width": 295,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svg/ginga4.svg#layer1",
+          "width": 150,
+          "height": 360
+        }]
       },
       {
         "name": "Rolê",
