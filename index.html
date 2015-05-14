@@ -50,6 +50,10 @@
             
             <iframe class="youtube_video" ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="480" height="272" frameborder="0" allowfullscreen></iframe>
 
+            <svg class="link_svg" ng-if="link.type == 'local_svg'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{{link.width}}" height="{{link.height}}">
+              <use xlink:href="{{link.href}}"/>
+            </svg>
+
           </section>
           </div>
 
