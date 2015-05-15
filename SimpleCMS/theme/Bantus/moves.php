@@ -1,0 +1,104 @@
+<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
+/****************************************************
+*
+* @File: 		  moves.php
+* @Package:		Bantus
+* @Author:		David Thevenin
+*
+*****************************************************/
+?>
+<!DOCTYPE html>
+<html ng-app="CapoeiraMoves">
+<head>
+
+	<!-- Site Title -->
+	<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
+	<?php get_header(); ?>
+	<meta name="robots" content="index, follow" />
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+	<link rel="stylesheet" type="text/css" href="theme/bantus/style.css" media="all" />
+    <meta name="viewport" content="initial-scale=1" />
+
+</head>
+  <body layout="column" ng-controller="AppCtrl">
+
+    <md-toolbar layout="row">
+      <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
+        <md-icon md-svg-icon="menu" ></md-icon>
+      </button>
+      <h1 class="md-toolbar-tools" layout-align-gt-sm="center"><?php get_page_title(); ?></h1>
+    </md-toolbar>
+	  
+	<div layout="row" flex>
+	  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+	  <md-tabs md-dynamic-height md-border-bottom>
+		<div ng-init="moveTypes = ['Footwork', 'Ataque', 'Defesa', 'Floreios']"></div>
+		<md-tab ng-repeat="type in moveTypes" label="{{type}}">
+		  <md-list>
+			<div ng-repeat="sub_technics in technics | filter:{type:type}">
+			  <md-subheader class="md-no-sticky">{{sub_technics.sub_type}}</md-subheader>
+			  <md-list-item ng-repeat="item in sub_technics.list | filter:{level:selectedLevels}:contains">
+				<md-button ng-click="technics.selectMove(item)" ng-class="{'selected' : item === technics.selected }">
+				  <h4>{{item.name}}</h4>
+				</md-button>
+			  </md-list-item>
+			</div>
+		  </md-list>
+		</md-tab>
+	  </md-tabs>
+	  </md-sidenav>
+
+	  <div layout="column" id="content">
+		<md-content class="md-padding move_description">
+
+		  <h2>{{technics.selected.name}}</h2>
+		  <h4>{{technics.selected.type}}/{{technics.selected.sub_type}}</h4>
+		  <p>{{technics.selected.description}}</p>
+		  
+		  <div class="medias" layout="column" layout-align="center center">
+
+		  <section ng-repeat="link in technics.selected.links">
+
+			<video controls ng-if="link.type == 'local_video'" src="{{generateLocalLink(link.href)}}" width="480" height="272" ></video>
+			
+			<iframe class="youtube_video" ng-if="link.type == 'youtube'" src="{{generateYoutubeLink(link.href)}}" width="480" height="272" frameborder="0" allowfullscreen></iframe>
+
+			<div ng-if="link.type == 'local_svg'">
+			  <div layout="row" layout-align="center center">
+			    <div>{{link.title}}</div>
+			    <svg flex class="link_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{{link.width}}" height="{{link.height}}">
+			      <use xlink:href="{{generateLocalLink(link.href)}}"/>
+				</svg>
+			  </div>
+			  <md-divider md-inset></md-divider>
+			</div>
+		  </section>
+		  </div>
+
+		</md-content>
+	  </div>
+
+	</div>
+	<?php get_page_content(); ?>
+	
+</div><!-- end wrapper -->
+	    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.js"></script>
+	
+	<script src="theme/bantus/CapoeiraMoves.js"></script>
+
+	
+</body>
+</html>
+
+
+<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
+
+?>
