@@ -1,5 +1,66 @@
 window.technics = [
   {
+    "type" : "Footwork",
+    "list" : [
+      {
+        "name": "Ginga",
+        "description": "The ginga (pronounced jeen-gah) is the fundamental footwork of capoeira. Its constant triangular footwork makes capoeira easily recognizable as well as confusing since it looks much more like a rhythmic dance step than an orthodox static fighting stance.",
+        "level": 0,
+        "links" : [{
+          "type": "local_svg",
+          "href": "assets/svgs/ginga1.svg#layer1",
+          "width": 120,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svgs/ginga2.svg#layer1",
+          "width": 285,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svgs/ginga3.svg#layer1",
+          "width": 295,
+          "height": 360
+        },{
+          "type": "local_svg",
+          "href": "assets/svgs/ginga4.svg#layer1",
+          "width": 150,
+          "height": 360
+        }]
+      },
+      {
+        "name": "Rolê",
+        "description": "Rolê: This 'rolling' motion is - together with the Ginga and the Au - the basic method of moving around in the Roda. This move can be performed from Ginga or from most of the esquivas. It is essentially a spin to one side by the capoeirista while remaining low to the ground and always watching the other player.",
+        "level": 0,
+        "links" : []
+      },
+      {
+        "name": "Fuga",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Tempo lateral tempo de frante",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Troca finta-armada",
+        "description": "",
+        "level": 2,
+        "links" : []
+      },
+      {
+        "name": "Finta-queixada",
+        "description": "",
+        "level": 2,
+        "links" : []
+      }
+    ]
+  },
+  {
     "type" : "Ataque",
     "sub_type" : "Rodundo",
     "list" : [
@@ -13,19 +74,23 @@ window.technics = [
         },{
           "type": "local_video",
           "href": "assets/movies/01_meia-lua de frente2.m4v"
-        },{
-          "type": "youtube",
-          "href": "UzG2bNa4CrE"
-        }]
+        },
+        // {
+        //   "type": "youtube",
+        //   "href": "UzG2bNa4CrE"
+        // }
+        ]
       },
       {
         "name": "Meia-lua de compasso",
         "description": "The Meia-Lua de compasso (lit: compass half moon) aka.rabo do arria, is an attack that embodies the true element of Capoeira since it combines an evasive maneuver with a spinning kick",
         "level": 0,
-        "links" : [{
-          "type": "youtube",
-          "href": "IiLqVCyyoPs"
-        }]
+        "links" : [
+        // {
+        //   "type": "youtube",
+        //   "href": "IiLqVCyyoPs"
+        // }
+        ]
       },
       {
         "name": "Armada",
@@ -49,10 +114,12 @@ window.technics = [
         "name": "Queixada",
         "description": "This is one of the most commonly used of the basic kicks in contemporary regional. To execute with the right leg, one begins in mid-ginga stance, with the left leg back and the right forward. From this position, step slightly to the left with the right leg, shifting body weight onto the forward (right) leg while the body faces left. Immediately bring the left leg forward, crossing it behind the right while beginning to throw body weight forward to gain momentum. When the body weight is fully resting on the left leg, release the right leg, kicking it in a large, sweeping arc to the right, keeping the leg straight throughout. When the kick has been completed, the capoeirista is now in mid-ginga stance, except now with the right leg back and the left forward.",
         "level": 0,
-        "links" : [{
-          "type": "youtube",
-          "href": "H3pQJc8d8H8"
-        }]
+        "links" : [
+        // {
+        //   "type": "youtube",
+        //   "href": "H3pQJc8d8H8"
+        // }
+        ]
       },
       {
         "name": "Chapiado",
@@ -118,10 +185,12 @@ window.technics = [
         "name": "Martelo",
         "description": "",
         "level": 0,
-        "links" : [{
-          "type": "youtube",
-          "href": "Q_pLY3qzIv8"
-        }]
+        "links" : [
+        // {
+        //   "type": "youtube",
+        //   "href": "Q_pLY3qzIv8"
+        // }
+        ]
       },
       {
         "name": "gancho",
@@ -250,67 +319,6 @@ window.technics = [
       },
       {
         "name": "Queda de quatro",
-        "description": "",
-        "level": 2,
-        "links" : []
-      }
-    ]
-  },
-  {
-    "type" : "Footwork",
-    "list" : [
-      {
-        "name": "Ginga",
-        "description": "The ginga (pronounced jeen-gah) is the fundamental footwork of capoeira. Its constant triangular footwork makes capoeira easily recognizable as well as confusing since it looks much more like a rhythmic dance step than an orthodox static fighting stance.",
-        "level": 0,
-        "links" : [{
-          "type": "local_svg",
-          "href": "assets/svgs/ginga1.svg#layer1",
-          "width": 120,
-          "height": 360
-        },{
-          "type": "local_svg",
-          "href": "assets/svgs/ginga2.svg#layer1",
-          "width": 285,
-          "height": 360
-        },{
-          "type": "local_svg",
-          "href": "assets/svgs/ginga3.svg#layer1",
-          "width": 295,
-          "height": 360
-        },{
-          "type": "local_svg",
-          "href": "assets/svgs/ginga4.svg#layer1",
-          "width": 150,
-          "height": 360
-        }]
-      },
-      {
-        "name": "Rolê",
-        "description": "Rolê: This 'rolling' motion is - together with the Ginga and the Au - the basic method of moving around in the Roda. This move can be performed from Ginga or from most of the esquivas. It is essentially a spin to one side by the capoeirista while remaining low to the ground and always watching the other player.",
-        "level": 0,
-        "links" : []
-      },
-      {
-        "name": "Fuga",
-        "description": "",
-        "level": 2,
-        "links" : []
-      },
-      {
-        "name": "Tempo lateral tempo de frante",
-        "description": "",
-        "level": 2,
-        "links" : []
-      },
-      {
-        "name": "Troca finta-armada",
-        "description": "",
-        "level": 2,
-        "links" : []
-      },
-      {
-        "name": "Finta-queixada",
         "description": "",
         "level": 2,
         "links" : []
