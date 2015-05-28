@@ -52,6 +52,10 @@ md-list .md-button {
   font-weight: bold;
 }
 
+.medias svg {
+  //-webkit-transform: scale(0.5)
+}
+
 @media (min-width: 890px) {
   .youtube_video {
     width: 560px;

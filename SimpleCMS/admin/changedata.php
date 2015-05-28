@@ -44,7 +44,7 @@ if (isset($_POST['submitted'])) {
 		redirect("edit.php?upd=edit-error&type=".urlencode(i18n_r('CANNOT_SAVE_EMPTY')));
 	}	else {
 		
-		$url="";$title="";$metad=""; $metak="";	$cont="";
+		$url="";$title="";$movetype="";$movesubtype="";$metad=""; $metak="";	$cont="";
 		
 		// is a slug provided?
 		if ($_POST['post-id']) { 
@@ -97,6 +97,8 @@ if (isset($_POST['submitted'])) {
 		
 		// format and clean the responses
 		if(isset($_POST['post-title'])) 			{	$title = safe_slash_html($_POST['post-title']);	}
+		if(isset($_POST['post-movetype'])) 		{	$movetype = safe_slash_html($_POST['post-movetype']);	}
+		if(isset($_POST['post-movesubtype'])) {	$movesubtype = safe_slash_html($_POST['post-movesubtype']);	}
 		if(isset($_POST['post-metak'])) 			{	$metak = safe_slash_html($_POST['post-metak']);	}
 		if(isset($_POST['post-metad'])) 			{	$metad = safe_slash_html($_POST['post-metad']);	}
 		if(isset($_POST['post-author'])) 			{	$author = safe_slash_html($_POST['post-author']);	}
@@ -142,6 +144,12 @@ if (isset($_POST['submitted'])) {
 
 		$note = $xml->addChild('title');
 		$note->addCData($title);
+		
+		$note = $xml->addChild('movetype');
+		$note->addCData($movetype);
+		
+		$note = $xml->addChild('movesubtype');
+		$note->addCData($movesubtype);
 		
 		$note = $xml->addChild('url');
 		$note->addCData($url);

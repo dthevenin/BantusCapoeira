@@ -10,26 +10,26 @@ window.technics = [
           "type": "local_svg",
           "href": "assets/svgs/ginga1.svg#layer1",
 	      "title": "Initial step:",
-          "width": 120,
-          "height": 300
+          "width": 60,
+          "height": 150
         },{
           "type": "local_svg",
           "href": "assets/svgs/ginga2.svg#layer1",
 	      "title": "First move:",
-          "width": 285,
-          "height": 300
+          "width": 145,
+          "height": 150
         },{
           "type": "local_svg",
           "href": "assets/svgs/ginga3.svg#layer1",
 	      "title": "Second move:",
-          "width": 295,
-          "height": 300
+          "width": 145,
+          "height": 150
         },{
           "type": "local_svg",
           "href": "assets/svgs/ginga4.svg#layer1",
 	      "title": "Final step:",
-          "width": 150,
-          "height": 300
+          "width": 125,
+          "height": 150
         }]
       },
       {
@@ -90,10 +90,10 @@ window.technics = [
         "description": "The Meia-Lua de compasso (lit: compass half moon) aka.rabo do arria, is an attack that embodies the true element of Capoeira since it combines an evasive maneuver with a spinning kick",
         "level": 0,
         "links" : [
-        // {
-        //   "type": "youtube",
-        //   "href": "IiLqVCyyoPs"
-        // }
+          {
+            "type": "local_video",
+            "href": "assets/movies/02_meia-lua-de-compasso.m4v"
+          }
         ]
       },
       {
@@ -119,10 +119,10 @@ window.technics = [
         "description": "This is one of the most commonly used of the basic kicks in contemporary regional. To execute with the right leg, one begins in mid-ginga stance, with the left leg back and the right forward. From this position, step slightly to the left with the right leg, shifting body weight onto the forward (right) leg while the body faces left. Immediately bring the left leg forward, crossing it behind the right while beginning to throw body weight forward to gain momentum. When the body weight is fully resting on the left leg, release the right leg, kicking it in a large, sweeping arc to the right, keeping the leg straight throughout. When the kick has been completed, the capoeirista is now in mid-ginga stance, except now with the right leg back and the left forward.",
         "level": 0,
         "links" : [
-        // {
-        //   "type": "youtube",
-        //   "href": "H3pQJc8d8H8"
-        // }
+          {
+            "type": "local_video",
+            "href": "assets/movies/05_queixada.m4v"
+          }
         ]
       },
       {
@@ -187,7 +187,7 @@ window.technics = [
       },
       {
         "name": "Martelo",
-        "description": "",
+        "description": "The martelo, which literally means \"hammer\", is generally defined as a strike with the instep, or lower part of the shin against the opponent's body; the most common target is temple of the head.",
         "level": 0,
         "links" : [
         // {
@@ -199,7 +199,7 @@ window.technics = [
       {
         "name": "gancho",
         "description": "",
-        "level": 0,
+        "level": 1,
         "links" : []
       },
       {
@@ -241,25 +241,25 @@ window.technics = [
       {
         "name": "galopante",
         "description": "",
-        "level": 0,
+        "level": 1,
         "links" : []
       },
       {
         "name": "forquihna",
         "description": "",
-        "level": 0,
+        "level": 1,
         "links" : []
       },
       {
         "name": "cotovelada",
         "description": "",
-        "level": 0,
+        "level": 1,
         "links" : []
       },
       {
         "name": "godeme",
         "description": "",
-        "level": 0,
+        "level": 1,
         "links" : []
       }
     ]

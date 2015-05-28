@@ -60,7 +60,8 @@ $i18n = array(
 "DELETEPAGE_TITLE"	=>	"Delete Page",
 "PAGE_MANAGEMENT"		=>	"Page Management",
 "TOGGLE_STATUS"			=>	"Toggle Stat<em>u</em>s",
-"TOTAL_PAGES"				=>	"total pages",
+"TOTAL_PAGES"       =>  "total pages",
+"TOTAL_MOVES"       =>  "total moves",
 "ALL_PAGES"					=>	"Pages",
 
 /* 
@@ -73,8 +74,10 @@ $i18n = array(
 "NONE"							=>	"None",
 "PAGE"							=>	"Page",
 "NEW_PAGE"					=>	"New Page",
-"PAGE_EDIT_MODE"		=>	"Edit Page",
-"CREATE_NEW_PAGE"		=>	"Add New Page",
+"PAGE_EDIT_MODE"    =>  "Edit Page",
+"MOVE_EDIT_MODE"    =>  "Edit Move",
+"CREATE_NEW_PAGE"   =>  "Add New Page",
+"CREATE_NEW_MOVE"   =>  "Add New Move",
 "VIEW"							=>	"<em>V</em>iew",
 "PAGE_OPTIONS"			=>	"Page Optio<em>n</em>s",
 "SLUG_URL"					=>	"Custom URL (Slug)",
@@ -290,7 +293,8 @@ $i18n = array(
  * For: include-nav.php
 */
 "WELCOME"						=>	"Welcome", // used as 'Welcome USERNAME!'
-"TAB_PAGES"					=>	"<em>P</em>ages",
+"TAB_PAGES"         =>  "<em>P</em>ages",
+"TAB_MOVES"         =>  "<em>M</em>oves",
 "TAB_FILES"					=>	"F<em>i</em>les",
 "TAB_THEME"					=>	"<em>T</em>heme",
 "TAB_BACKUPS"				=>	"<em>B</em>ackups",
@@ -327,6 +331,13 @@ $i18n = array(
 */
 "SIDE_CREATE_NEW"		=>	"<em>C</em>reate New Page",
 "SIDE_VIEW_PAGES"		=>	"View All <em>P</em>ages",
+
+
+/* 
+ * For: sidebar-move.php
+*/
+"SIDE_CREATE_NEW_MOVE"   =>  "<em>C</em>reate New Move",
+"SIDE_VIEW_MOVES"   =>  "View All <em>M</em>oves",
 
 /* 
  * For: sidebar-settings.php

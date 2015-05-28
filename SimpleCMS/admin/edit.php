@@ -25,7 +25,8 @@ $nonce = isset($_GET['nonce']) ? var_out( $_GET['nonce'] ): null;
 $path  = GSDATAPAGESPATH;
 
 // Page variables reset
-$theme_templates = ''; 
+$theme_templates = '';
+$movetype_templates = '';
 $parents_list = ''; 
 $keytags = '';
 $parent = '';
@@ -39,6 +40,9 @@ $title = '';
 $url = '';
 $metak = '';
 $metad = '';
+$movetype = '';
+$movesubtype = '';
+$movetypes = ["Footwork", "Ataque", "Defesa", "Floreios"];
 
 if ($id){
 	// get saved page data
@@ -53,6 +57,8 @@ if ($id){
 	$pubDate = $data_edit->pubDate;
 	$metak = stripslashes($data_edit->meta);
 	$metad = stripslashes($data_edit->metad);
+	$movetype = stripslashes($data_edit->movetype);
+	$movesubtype = stripslashes($data_edit->movesubtype);
 	$url = $data_edit->url;
 	$content = stripslashes($data_edit->content);
 	$template = $data_edit->template;
@@ -106,6 +112,17 @@ foreach ($templates as $file){
 	
 	$theme_templates .= '<option '.$sel.' value="'.$file.'" >'.$templatename.'</option>';
 }
+
+foreach ($movetypes as $_type){
+	if ($_type == $movetype)	{ 
+		$sel="selected"; 
+	} else{ 
+		$sel=""; 
+	}
+	
+	$movetype_templates .= '<option '.$sel.' value="'.$_type.'" >'.$_type.'</option>';
+}
+
 
 // SETUP CHECKBOXES
 $sel_m = ($menuStatus != '') ? 'checked' : '' ;
@@ -245,6 +262,20 @@ get_template('header', cl($SITENAME).' &raquo; '.i18n_r('EDIT').' '.$title);
 				</p>
 				
 
+			</div>
+			<div class="clear"></div>
+
+			<div class="leftopt">
+				<p class="inline clearfix" id="move-type-wrap" >
+					<label for="post-movetype" >Move type: &nbsp; </label>
+					<select id="post-movetype" name="post-movetype" class="text autowidth" >
+						<?php echo $movetype_templates; ?>
+					</select>
+				</p>
+				<p>
+					<label for="post-movesubtype">Move SubType:</label>
+					<input class="text short" id="post-movesubtype" name="post-movesubtype" type="text" value="<?php echo $movesubtype; ?>" />
+				</p>
 			</div>
 			<div class="clear"></div>
 			<?php exec_action('edit-extras'); ?>		

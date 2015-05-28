@@ -1,7 +1,7 @@
 var app = angular.module ('CapoeiraMoves', ['ngMaterial']);
 
 app.config (function ($mdIconProvider) {
-  $mdIconProvider.icon ("menu", "./assets/menu.svg", 24);
+  $mdIconProvider.icon ("menu", "theme/Bantus/assets/menu.svg", 24);
 });
 
 app.controller('AppCtrl', function($scope, $mdSidenav, $sce){
@@ -36,7 +36,7 @@ app.controller('AppCtrl', function($scope, $mdSidenav, $sce){
     return $sce.trustAsResourceUrl ("data/uploads/" + code);
   }
   
-  $scope.selectedLevels = [0, 1]; 
+  $scope.selectedLevels = [0];//[0, 1]; 
 
   $scope.contains = function (expected, actual) {  
     return actual.indexOf(expected) > -1;

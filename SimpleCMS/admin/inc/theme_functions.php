@@ -115,6 +115,47 @@ function get_page_title($echo=true) {
 }
 
 /**
+ * Get Page Move type
+ *
+ * @since 1.0
+ * @uses $title
+ *
+ * @param bool $echo Optional, default is true. False will 'return' value
+ * @return string Echos or returns based on param $echo
+ */
+function get_page_movetype($echo=true) {
+  global $movetype;
+  $myVar = strip_decode($movetype);
+  
+  if ($echo) {
+    echo $myVar;
+  } else {
+    return $myVar;
+  }
+}
+
+
+/**
+ * Get Page Move Sub type
+ *
+ * @since 1.0
+ * @uses $title
+ *
+ * @param bool $echo Optional, default is true. False will 'return' value
+ * @return string Echos or returns based on param $echo
+ */
+function get_page_movesubtype($echo=true) {
+  global $movesubtype;
+  $myVar = strip_decode($movesubtype);
+  
+  if ($echo) {
+    echo $myVar;
+  } else {
+    return $myVar;
+  }
+}
+
+/**
  * Get Page Clean Title
  *
  * This will remove all HTML from the title before returning
